@@ -1,0 +1,721 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Uploaded Files</title>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+		<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
+		</head>
+		<body onload="nameValDisplay()">
+
+			<!-- #header Start-->
+			  <header id="header">
+			  	<div class="header-top bg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 col-xs-12 hide_column">
+								<div class="header-top-menu">
+									<h2 style="color: white;">Project Management System</h2>
+								</div>
+							</div>
+							<div class="col-md-5 col-xs-12">
+								<div class="header-top-right text-right">
+									<ul class="account">	
+										<li>
+											<a href="#" id="fullnameVal1" style="font-size: 18px;">
+											</a>
+											<a><span> <i class="fa fa-angle-down"></i></span></a>
+											<ul class="profile">
+												<li><a href="user_profile_hod.html">User Profile</a></li>
+												<li><a href="uploaded_items_hod.html">Uploaded Files</a></li>
+												<li><a href="item_notification_hod.html">Notifications</a></li>
+												<li><a href="item_message_hod.html">Messages</a></li>
+												<li><a href="change_password_hod.html">Change Password</a></li>
+												<li><a href="#" onclick="logout()">Sign Out</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="notification_icons">
+										<li>
+											<a href="#"><i class="fa fa-bell-o"></i><span class="number">1</span></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-envelope-o"></i><span class="number">0</span></a>
+										</li>
+										<li>
+											<!--<a href="#"><i class="fa fa-shopping-basket"></i></a>-->
+										</li> 
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			    <div class="header-bottom">
+			    	<div class="container">
+				    	<div class="row align-items-center d-flex">
+				    		<div class="col-lg-3">
+				    			<div id="logo">
+							        <a href="index.html"><!--<img class="" src="img/logo.png" alt="" title="" />--></a>
+							    </div>
+				    		</div>
+					   		<div class="col-lg-9">				
+						      <nav id="nav-menu-container">
+						        <ul class="nav-menu float-right">
+						          <li class="menu-has-children"><a href="index_hod.html">Home</a> </li>
+						          <li class="menu-has-children"><a href="index_hod.html#services">Services</a></li>
+						          <li class="menu-has-children"><a href="index_hod.html#about">About</a></li> 
+						          <li class="menu-has-children"><a href="index_hod.html#team">Team</a></li>         
+						          <li class="menu-has-children"><a href="index_hod.html#contact">Contact</a></li>	
+						          <li class="menu-has-children"><a href="index_hod.html">Sign In as</a>
+						          	<ul>
+						            	<li><a href="hodlogin.html">HOD</a></li>
+						            	<li><a href="guidelogin.html">Guide</a></li>
+						            	<li><a href="stulogin.html">Student</a></li>
+						         	</ul>
+						          </li>		          				          
+						        </ul>
+
+						      </nav><!-- #nav-menu-container -->	
+					      </div>	    		
+				    	</div>
+				    </div>
+			    </div>
+			  </header><!-- #header -->
+
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Uploaded Files				
+							</h1>	
+							<p class="text-white link-nav"><a href="index_hod.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href=""> Uploaded Files</a></p>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+			
+			<!-- Start post Area -->
+			<section class="post-area section-gap">
+				<div class="container">
+					<div class="row justify-content-center d-flex">
+						<div class="col-lg-3 sidebar">
+							<div class="single-slidebar-profile">
+								<figure>
+                                    <i class='fas fa-users' style='font-size:90px;color: black;'></i><br><br>
+                                    <figcaption>
+                                        <h2 id="fullnameVal2"></h2>
+                                    </figcaption>
+                                </figure>
+							</div>
+							<div class="single-slidebar">
+								
+								<ul class="cat-list">
+									<li><a class="justify-content-between d-flex text_active" href="user_profile_hod.html"><p><i class="fa fa-user-o pr-2"></i>  User Profile</p></a></li>
+									<li><a class="justify-content-between d-flex" href="uploaded_items_hod.html"><p><i class="fa fa-file-word-o pr-2"></i>  Uploaded Files</p></a></li>
+									<li><a class="justify-content-between d-flex" href="item_notification_hod.html"><p><i class="fa fa-briefcase pr-2"></i>  Notifications</p></a></li>
+									<li><a class="justify-content-between d-flex" href="item_message_hod.html"><p><i class="fa fa-bell-o pr-2"></i>  Messages</p></a></li>
+									<li><a class="justify-content-between d-flex text-active" href="change_password_hod.html"><p><i class="fa fa-lock pr-2"></i> Change Password</p></a></li>
+									<li><a class="justify-content-between d-flex" href="" onclick="logout()"><p><i class="fa fa-sign-out pr-2"></i> Logout</p></a></li>
+								</ul>
+							</div>							
+
+						</div>
+						<div class="col-lg-9 post-list">
+							<div class="profile_job_content col-lg-12">
+								<div class="headline">
+									<h3>Uploaded files</h3>
+								</div>
+								<div class="profile_job_detail">
+									<div class="row">
+
+										<div class="col-lg-9">				
+											<nav id="nav-menu-container2">
+											<ul class="nav-menu float-right">
+												<li class="menu-has-children"><a href="#" id="FY">FY</a> 
+													<ul>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F1</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team1" onclick="subworkFY()">Team 1</a></li>
+																	<li><a class="dropdown-item" id="team2" onclick="subworkFY()">Team 2</a></li>
+																	<li><a class="dropdown-item" id="team3" onclick="subworkFY()">Team 3</a></li>
+																	<li><a class="dropdown-item" id="team4" onclick="subworkFY()">Team 4</a></li>
+																	<li><a class="dropdown-item" id="team5" onclick="subworkFY()">Team 5</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F2</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team6" onclick="subworkFY()">Team 6</a></li>
+																	<li><a class="dropdown-item" id="team7" onclick="subworkFY()">Team 7</a></li>
+																	<li><a class="dropdown-item" id="team8" onclick="subworkFY()">Team 8</a></li>
+																	<li><a class="dropdown-item" id="team9" onclick="subworkFY()">Team 9</a></li>
+																	<li><a class="dropdown-item" id="team10" onclick="subworkFY()">Team 10</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F3</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team11" onclick="subworkFY()">Team 11</a></li>
+																	<li><a class="dropdown-item" id="team12" onclick="subworkFY()">Team 12</a></li>
+																	<li><a class="dropdown-item" id="team13" onclick="subworkFY()">Team 13</a></li>
+																	<li><a class="dropdown-item" id="team14" onclick="subworkFY()">Team 14</a></li>
+																	<li><a class="dropdown-item" id="team15" onclick="subworkFY()">Team 15</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F4</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team16" onclick="subworkFY()">Team 16</a></li>
+																	<li><a class="dropdown-item" id="team17" onclick="subworkFY()">Team 17</a></li>
+																	<li><a class="dropdown-item" id="team18" onclick="subworkFY()">Team 18</a></li>
+																	<li><a class="dropdown-item" id="team19" onclick="subworkFY()" >Team 19</a></li>
+																	<li><a class="dropdown-item" id="team20" onclick="subworkFY()">Team 20</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F5</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team21" onclick="subworkFY()">Team 21</a></li>
+																	<li><a class="dropdown-item" id="team22" onclick="subworkFY()">Team 22</a></li>
+																	<li><a class="dropdown-item" id="team23" onclick="subworkFY()">Team 23</a></li>
+																	<li><a class="dropdown-item" id="team24" onclick="subworkFY()">Team 24</a></li>
+																	<li><a class="dropdown-item" id="team25" onclick="subworkFY()">Team 25</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F6</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team26" onclick="subworkFY()">Team 26</a></li>
+																	<li><a class="dropdown-item" id="team27" onclick="subworkFY()">Team 27</a></li>
+																	<li><a class="dropdown-item" id="team28" onclick="subworkFY()">Team 28</a></li>
+																	<li><a class="dropdown-item" id="team29" onclick="subworkFY()">Team 29</a></li>
+																	<li><a class="dropdown-item" id="team30" onclick="subworkFY()">Team 30</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F7</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team31" onclick="subworkFY()">Team 31</a></li>
+																	<li><a class="dropdown-item" id="team32" onclick="subworkFY()">Team 32</a></li>
+																	<li><a class="dropdown-item" id="team33" onclick="subworkFY()">Team 33</a></li>
+																	<li><a class="dropdown-item" id="team34" onclick="subworkFY()">Team 34</a></li>
+																	<li><a class="dropdown-item" id="team35" onclick="subworkFY()">Team 35</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>F8</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team36" onclick="subworkFY()">Team 36</a></li>
+																	<li><a class="dropdown-item" id="team37" onclick="subworkFY()">Team 37</a></li>
+																	<li><a class="dropdown-item" id="team38" onclick="subworkFY()">Team 38</a></li>
+																	<li><a class="dropdown-item" id="team39" onclick="subworkFY()">Team 39</a></li>
+																	<li><a class="dropdown-item" id="team40" onclick="subworkFY()">Team 40</a></li>
+																</div>
+														</div>
+													</ul>   
+												</li>   
+												<li class="menu-has-children"><a href="#" id="SY">SY</a> 
+													<ul>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S1</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team1" onclick="subworkSY()">Team 1</a></li>
+																	<li><a class="dropdown-item" id="team2" onclick="subworkSY()">Team 2</a></li>
+																	<li><a class="dropdown-item" id="team3" onclick="subworkSY()">Team 3</a></li>
+																	<li><a class="dropdown-item" id="team4" onclick="subworkSY()">Team 4</a></li>
+																	<li><a class="dropdown-item" id="team5" onclick="subworkSY()">Team 5</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S2</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team6" onclick="subworkSY()">Team 6</a></li>
+																	<li><a class="dropdown-item" id="team7" onclick="subworkSY()">Team 7</a></li>
+																	<li><a class="dropdown-item" id="team8" onclick="subworkSY()">Team 8</a></li>
+																	<li><a class="dropdown-item" id="team9" onclick="subworkSY()">Team 9</a></li>
+																	<li><a class="dropdown-item" id="team10" onclick="subworkSY()">Team 10</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S3</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team11" onclick="subworkSY()">Team 11</a></li>
+																	<li><a class="dropdown-item" id="team12" onclick="subworkSY()">Team 12</a></li>
+																	<li><a class="dropdown-item" id="team13" onclick="subworkSY()">Team 13</a></li>
+																	<li><a class="dropdown-item" id="team14" onclick="subworkSY()">Team 14</a></li>
+																	<li><a class="dropdown-item" id="team15" onclick="subworkSY()">Team 15</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S4</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team16" onclick="subworkSY()">Team 16</a></li>
+																	<li><a class="dropdown-item" id="team17" onclick="subworkSY()">Team 17</a></li>
+																	<li><a class="dropdown-item" id="team18" onclick="subworkSY()">Team 18</a></li>
+																	<li><a class="dropdown-item" id="team19" onclick="subworkSY()" >Team 19</a></li>
+																	<li><a class="dropdown-item" id="team20" onclick="subworkSY()">Team 20</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S5</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team21" onclick="subworkSY()">Team 21</a></li>
+																	<li><a class="dropdown-item" id="team22" onclick="subworkSY()">Team 22</a></li>
+																	<li><a class="dropdown-item" id="team23" onclick="subworkSY()">Team 23</a></li>
+																	<li><a class="dropdown-item" id="team24" onclick="subworkSY()">Team 24</a></li>
+																	<li><a class="dropdown-item" id="team25" onclick="subworkSY()">Team 25</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S6</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team26" onclick="subworkSY()">Team 26</a></li>
+																	<li><a class="dropdown-item" id="team27" onclick="subworkSY()">Team 27</a></li>
+																	<li><a class="dropdown-item" id="team28" onclick="subworkSY()">Team 28</a></li>
+																	<li><a class="dropdown-item" id="team29" onclick="subworkSY()">Team 29</a></li>
+																	<li><a class="dropdown-item" id="team30" onclick="subworkSY()">Team 30</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S7</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team31" onclick="subworkSY()">Team 31</a></li>
+																	<li><a class="dropdown-item" id="team32" onclick="subworkSY()">Team 32</a></li>
+																	<li><a class="dropdown-item" id="team33" onclick="subworkSY()">Team 33</a></li>
+																	<li><a class="dropdown-item" id="team34" onclick="subworkSY()">Team 34</a></li>
+																	<li><a class="dropdown-item" id="team35" onclick="subworkSY()">Team 35</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>S8</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team36" onclick="subworkSY()">Team 36</a></li>
+																	<li><a class="dropdown-item" id="team37" onclick="subworkSY()">Team 37</a></li>
+																	<li><a class="dropdown-item" id="team38" onclick="subworkSY()">Team 38</a></li>
+																	<li><a class="dropdown-item" id="team39" onclick="subworkSY()">Team 39</a></li>
+																	<li><a class="dropdown-item" id="team40" onclick="subworkSY()">Team 40</a></li>
+																</div>
+														</div>
+													</ul>   
+												</li>     
+												<li class="menu-has-children"><a href="#" id="TY">TY</a> 
+													<ul>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T1</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team1" onclick="subworkTY()">Team 1</a></li>
+																	<li><a class="dropdown-item" id="team2" onclick="subworkTY()">Team 2</a></li>
+																	<li><a class="dropdown-item" id="team3" onclick="subworkTY()">Team 3</a></li>
+																	<li><a class="dropdown-item" id="team4" onclick="subworkTY()">Team 4</a></li>
+																	<li><a class="dropdown-item" id="team5" onclick="subworkTY()">Team 5</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T2</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team6" onclick="subworkTY()">Team 6</a></li>
+																	<li><a class="dropdown-item" id="team7" onclick="subworkTY()">Team 7</a></li>
+																	<li><a class="dropdown-item" id="team8" onclick="subworkTY()">Team 8</a></li>
+																	<li><a class="dropdown-item" id="team9" onclick="subworkTY()">Team 9</a></li>
+																	<li><a class="dropdown-item" id="team10" onclick="subworkTY()">Team 10</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T3</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team11" onclick="subworkTY()">Team 11</a></li>
+																	<li><a class="dropdown-item" id="team12" onclick="subworkTY()">Team 12</a></li>
+																	<li><a class="dropdown-item" id="team13" onclick="subworkTY()">Team 13</a></li>
+																	<li><a class="dropdown-item" id="team14" onclick="subworkTY()">Team 14</a></li>
+																	<li><a class="dropdown-item" id="team15" onclick="subworkTY()">Team 15</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T4</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team16" onclick="subworkTY()">Team 16</a></li>
+																	<li><a class="dropdown-item" id="team17" onclick="subworkTY()">Team 17</a></li>
+																	<li><a class="dropdown-item" id="team18" onclick="subworkTY()">Team 18</a></li>
+																	<li><a class="dropdown-item" id="team19" onclick="subworkTY()" >Team 19</a></li>
+																	<li><a class="dropdown-item" id="team20" onclick="subworkTY()">Team 20</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T5</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team21" onclick="subworkTY()">Team 21</a></li>
+																	<li><a class="dropdown-item" id="team22" onclick="subworkTY()">Team 22</a></li>
+																	<li><a class="dropdown-item" id="team23" onclick="subworkTY()">Team 23</a></li>
+																	<li><a class="dropdown-item" id="team24" onclick="subworkTY()">Team 24</a></li>
+																	<li><a class="dropdown-item" id="team25" onclick="subworkTY()">Team 25</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T6</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team26" onclick="subworkTY()">Team 26</a></li>
+																	<li><a class="dropdown-item" id="team27" onclick="subworkTY()">Team 27</a></li>
+																	<li><a class="dropdown-item" id="team28" onclick="subworkTY()">Team 28</a></li>
+																	<li><a class="dropdown-item" id="team29" onclick="subworkTY()">Team 29</a></li>
+																	<li><a class="dropdown-item" id="team30" onclick="subworkTY()">Team 30</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T7</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team31" onclick="subworkTY()">Team 31</a></li>
+																	<li><a class="dropdown-item" id="team32" onclick="subworkTY()">Team 32</a></li>
+																	<li><a class="dropdown-item" id="team33" onclick="subworkTY()">Team 33</a></li>
+																	<li><a class="dropdown-item" id="team34" onclick="subworkTY()">Team 34</a></li>
+																	<li><a class="dropdown-item" id="team35" onclick="subworkTY()">Team 35</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>T8</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team36" onclick="subworkTY()">Team 36</a></li>
+																	<li><a class="dropdown-item" id="team37" onclick="subworkTY()">Team 37</a></li>
+																	<li><a class="dropdown-item" id="team38" onclick="subworkTY()">Team 38</a></li>
+																	<li><a class="dropdown-item" id="team39" onclick="subworkTY()">Team 39</a></li>
+																	<li><a class="dropdown-item" id="team40" onclick="subworkTY()">Team 40</a></li>
+																</div>
+														</div>
+													</ul>   
+												</li>   
+												<li class="menu-has-children"><a href="#" id="BTech">B.Tech</a> 
+													<ul>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B1</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team1" onclick="subworkBTech()">Team 1</a></li>
+																	<li><a class="dropdown-item" id="team2" onclick="subworkBTech()">Team 2</a></li>
+																	<li><a class="dropdown-item" id="team3" onclick="subworkBTech()">Team 3</a></li>
+																	<li><a class="dropdown-item" id="team4" onclick="subworkBTech()">Team 4</a></li>
+																	<li><a class="dropdown-item" id="team5" onclick="subworkBTech()">Team 5</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B2</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team6" onclick="subworkBTech()">Team 6</a></li>
+																	<li><a class="dropdown-item" id="team7" onclick="subworkBTech()">Team 7</a></li>
+																	<li><a class="dropdown-item" id="team8" onclick="subworkBTech()">Team 8</a></li>
+																	<li><a class="dropdown-item" id="team9" onclick="subworkBTech()">Team 9</a></li>
+																	<li><a class="dropdown-item" id="team10" onclick="subworkBTech()">Team 10</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B3</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team11" onclick="subworkBTech()">Team 11</a></li>
+																	<li><a class="dropdown-item" id="team12" onclick="subworkBTech()">Team 12</a></li>
+																	<li><a class="dropdown-item" id="team13" onclick="subworkBTech()">Team 13</a></li>
+																	<li><a class="dropdown-item" id="team14" onclick="subworkBTech()">Team 14</a></li>
+																	<li><a class="dropdown-item" id="team15" onclick="subworkBTech()">Team 15</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B4</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team16" onclick="subworkBTech()">Team 16</a></li>
+																	<li><a class="dropdown-item" id="team17" onclick="subworkBTech()">Team 17</a></li>
+																	<li><a class="dropdown-item" id="team18" onclick="subworkBTech()">Team 18</a></li>
+																	<li><a class="dropdown-item" id="team19" onclick="subworkBTech()" >Team 19</a></li>
+																	<li><a class="dropdown-item" id="team20" onclick="subworkBTech()">Team 20</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B5</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team21" onclick="subworkBTech()">Team 21</a></li>
+																	<li><a class="dropdown-item" id="team22" onclick="subworkBTech()">Team 22</a></li>
+																	<li><a class="dropdown-item" id="team23" onclick="subworkBTech()">Team 23</a></li>
+																	<li><a class="dropdown-item" id="team24" onclick="subworkBTech()">Team 24</a></li>
+																	<li><a class="dropdown-item" id="team25" onclick="subworkBTech()">Team 25</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B6</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team26" onclick="subworkBTech()">Team 26</a></li>
+																	<li><a class="dropdown-item" id="team27" onclick="subworkBTech()">Team 27</a></li>
+																	<li><a class="dropdown-item" id="team28" onclick="subworkBTech()">Team 28</a></li>
+																	<li><a class="dropdown-item" id="team29" onclick="subworkBTech()">Team 29</a></li>
+																	<li><a class="dropdown-item" id="team30" onclick="subworkBTech()">Team 30</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B7</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team31" onclick="subworkBTech()">Team 31</a></li>
+																	<li><a class="dropdown-item" id="team32" onclick="subworkBTech()">Team 32</a></li>
+																	<li><a class="dropdown-item" id="team33" onclick="subworkBTech()">Team 33</a></li>
+																	<li><a class="dropdown-item" id="team34" onclick="subworkBTech()">Team 34</a></li>
+																	<li><a class="dropdown-item" id="team35" onclick="subworkBTech()">Team 35</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>B8</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team36" onclick="subworkBTech()">Team 36</a></li>
+																	<li><a class="dropdown-item" id="team37" onclick="subworkBTech()">Team 37</a></li>
+																	<li><a class="dropdown-item" id="team38" onclick="subworkBTech()">Team 38</a></li>
+																	<li><a class="dropdown-item" id="team39" onclick="subworkBTech()">Team 39</a></li>
+																	<li><a class="dropdown-item" id="team40" onclick="subworkBTech()">Team 40</a></li>
+																</div>
+														</div>
+													</ul>   
+												</li>       
+												<li class="menu-has-children"><a href="#" id="MTechFY">M.Tech FY</a> 
+													<ul>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF1</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team1" onclick="subworkMTechFY()">Team 1</a></li>
+																	<li><a class="dropdown-item" id="team2" onclick="subworkMTechFY()">Team 2</a></li>
+																	<li><a class="dropdown-item" id="team3" onclick="subworkMTechFY()">Team 3</a></li>
+																	<li><a class="dropdown-item" id="team4" onclick="subworkMTechFY()">Team 4</a></li>
+																	<li><a class="dropdown-item" id="team5" onclick="subworkMTechFY()">Team 5</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF2</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team6" onclick="subworkMTechFY()">Team 6</a></li>
+																	<li><a class="dropdown-item" id="team7" onclick="subworkMTechFY()">Team 7</a></li>
+																	<li><a class="dropdown-item" id="team8" onclick="subworkMTechFY()">Team 8</a></li>
+																	<li><a class="dropdown-item" id="team9" onclick="subworkMTechFY()">Team 9</a></li>
+																	<li><a class="dropdown-item" id="team10" onclick="subworkMTechFY()">Team 10</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF3</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team11" onclick="subworkMTechFY()">Team 11</a></li>
+																	<li><a class="dropdown-item" id="team12" onclick="subworkMTechFY()">Team 12</a></li>
+																	<li><a class="dropdown-item" id="team13" onclick="subworkMTechFY()">Team 13</a></li>
+																	<li><a class="dropdown-item" id="team14" onclick="subworkMTechFY()">Team 14</a></li>
+																	<li><a class="dropdown-item" id="team15" onclick="subworkMTechFY()">Team 15</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF4</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team16" onclick="subworkMTechFY()">Team 16</a></li>
+																	<li><a class="dropdown-item" id="team17" onclick="subworkMTechFY()">Team 17</a></li>
+																	<li><a class="dropdown-item" id="team18" onclick="subworkMTechFY()">Team 18</a></li>
+																	<li><a class="dropdown-item" id="team19" onclick="subworkMTechFY()" >Team 19</a></li>
+																	<li><a class="dropdown-item" id="team20" onclick="subworkMTechFY()">Team 20</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF5</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team21" onclick="subworkMTechFY()">Team 21</a></li>
+																	<li><a class="dropdown-item" id="team22" onclick="subworkMTechFY()">Team 22</a></li>
+																	<li><a class="dropdown-item" id="team23" onclick="subworkMTechFY()">Team 23</a></li>
+																	<li><a class="dropdown-item" id="team24" onclick="subworkMTechFY()">Team 24</a></li>
+																	<li><a class="dropdown-item" id="team25" onclick="subworkMTechFY()">Team 25</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF6</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team26" onclick="subworkMTechFY()">Team 26</a></li>
+																	<li><a class="dropdown-item" id="team27" onclick="subworkMTechFY()">Team 27</a></li>
+																	<li><a class="dropdown-item" id="team28" onclick="subworkMTechFY()">Team 28</a></li>
+																	<li><a class="dropdown-item" id="team29" onclick="subworkMTechFY()">Team 29</a></li>
+																	<li><a class="dropdown-item" id="team30" onclick="subworkMTechFY()">Team 30</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF7</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team31" onclick="subworkMTechFY()">Team 31</a></li>
+																	<li><a class="dropdown-item" id="team32" onclick="subworkMTechFY()">Team 32</a></li>
+																	<li><a class="dropdown-item" id="team33" onclick="subworkMTechFY()">Team 33</a></li>
+																	<li><a class="dropdown-item" id="team34" onclick="subworkMTechFY()">Team 34</a></li>
+																	<li><a class="dropdown-item" id="team35" onclick="subworkMTechFY()">Team 35</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>MF8</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team36" onclick="subworkMTechFY()">Team 36</a></li>
+																	<li><a class="dropdown-item" id="team37" onclick="subworkMTechFY()">Team 37</a></li>
+																	<li><a class="dropdown-item" id="team38" onclick="subworkMTechFY()">Team 38</a></li>
+																	<li><a class="dropdown-item" id="team39" onclick="subworkMTechFY()">Team 39</a></li>
+																	<li><a class="dropdown-item" id="team40" onclick="subworkMTechFY()">Team 40</a></li>
+																</div>
+														</div>
+													</ul>   
+												</li>   
+												<li class="menu-has-children"><a href="#" id="MTech">M.Tech</a> 
+													<ul>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M1</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team1" onclick="subworkMTech()">Team 1</a></li>
+																	<li><a class="dropdown-item" id="team2" onclick="subworkMTech()">Team 2</a></li>
+																	<li><a class="dropdown-item" id="team3" onclick="subworkMTech()">Team 3</a></li>
+																	<li><a class="dropdown-item" id="team4" onclick="subworkMTech()">Team 4</a></li>
+																	<li><a class="dropdown-item" id="team5" onclick="subworkMTech()">Team 5</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M2</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team6" onclick="subworkMTech()">Team 6</a></li>
+																	<li><a class="dropdown-item" id="team7" onclick="subworkMTech()">Team 7</a></li>
+																	<li><a class="dropdown-item" id="team8" onclick="subworkMTech()">Team 8</a></li>
+																	<li><a class="dropdown-item" id="team9" onclick="subworkMTech()">Team 9</a></li>
+																	<li><a class="dropdown-item" id="team10" onclick="subworkMTech()">Team 10</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M3</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team11" onclick="subworkMTech()">Team 11</a></li>
+																	<li><a class="dropdown-item" id="team12" onclick="subworkMTech()">Team 12</a></li>
+																	<li><a class="dropdown-item" id="team13" onclick="subworkMTech()">Team 13</a></li>
+																	<li><a class="dropdown-item" id="team14" onclick="subworkMTech()">Team 14</a></li>
+																	<li><a class="dropdown-item" id="team15" onclick="subworkMTech()">Team 15</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M4</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team16" onclick="subworkMTech()">Team 16</a></li>
+																	<li><a class="dropdown-item" id="team17" onclick="subworkMTech()">Team 17</a></li>
+																	<li><a class="dropdown-item" id="team18" onclick="subworkMTech()">Team 18</a></li>
+																	<li><a class="dropdown-item" id="team19" onclick="subworkMTech()" >Team 19</a></li>
+																	<li><a class="dropdown-item" id="team20" onclick="subworkMTech()">Team 20</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M5</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team21" onclick="subworkMTech()">Team 21</a></li>
+																	<li><a class="dropdown-item" id="team22" onclick="subworkMTech()">Team 22</a></li>
+																	<li><a class="dropdown-item" id="team23" onclick="subworkMTech()">Team 23</a></li>
+																	<li><a class="dropdown-item" id="team24" onclick="subworkMTech()">Team 24</a></li>
+																	<li><a class="dropdown-item" id="team25" onclick="subworkMTech()">Team 25</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M6</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team26" onclick="subworkMTech()">Team 26</a></li>
+																	<li><a class="dropdown-item" id="team27" onclick="subworkMTech()">Team 27</a></li>
+																	<li><a class="dropdown-item" id="team28" onclick="subworkMTech()">Team 28</a></li>
+																	<li><a class="dropdown-item" id="team29" onclick="subworkMTech()">Team 29</a></li>
+																	<li><a class="dropdown-item" id="team30" onclick="subworkMTech()">Team 30</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M7</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team31" onclick="subworkMTech()">Team 31</a></li>
+																	<li><a class="dropdown-item" id="team32" onclick="subworkMTech()">Team 32</a></li>
+																	<li><a class="dropdown-item" id="team33" onclick="subworkMTech()">Team 33</a></li>
+																	<li><a class="dropdown-item" id="team34" onclick="subworkMTech()">Team 34</a></li>
+																	<li><a class="dropdown-item" id="team35" onclick="subworkMTech()">Team 35</a></li>
+																</div>
+														</div>
+														<div class="dropdown dropright">
+															<li data-toggle="dropdown"><a>M8</a></li>
+																<div class="dropdown-menu" id="team">
+																	<li><a class="dropdown-item" id="team36" onclick="subworkMTech()">Team 36</a></li>
+																	<li><a class="dropdown-item" id="team37" onclick="subworkMTech()">Team 37</a></li>
+																	<li><a class="dropdown-item" id="team38" onclick="subworkMTech()">Team 38</a></li>
+																	<li><a class="dropdown-item" id="team39" onclick="subworkMTech()">Team 39</a></li>
+																	<li><a class="dropdown-item" id="team40" onclick="subworkMTech()">Team 40</a></li>
+																</div>
+														</div>
+													</ul>   
+												</li>   
+											</ul>
+											</nav>
+										</div>
+										<table class="table table-striped" id="table-btn" style="display: none;">
+											<tr  class="bg-info">
+												<th>Name</th>
+											</tr>
+											<tbody id="myTable">
+												<a href=""></a>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End post Area -->
+
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+			<script src="logout.js"></script>
+			<script src="uploaded_items.js"></script>
+			<script src="usernameDisplay.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>		
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
+
+
+
