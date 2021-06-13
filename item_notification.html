@@ -1,0 +1,202 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="">
+		<!-- Author Meta -->
+		<meta name="author" content="">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Notifications</title>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.min.css">
+			<link rel="stylesheet" href="css/owl.theme.min.css">
+			<link rel="stylesheet" href="css/owl.transitions.css">
+			<link rel="stylesheet" href="css/gp_product_carousel_advance.css">
+			<link rel="stylesheet" href="css/w_shop_105.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		<body onload="teamValDisplay()">
+
+			<!-- #header Start-->
+			  <header id="header">
+			  	<div class="header-top bg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7 col-xs-12 hide_column">
+								<div class="header-top-menu">
+									<h2 style="color: white;">Project Management System</h2>
+								</div>
+							</div>
+							<div class="col-md-5 col-xs-12">
+								<div class="header-top-right text-right">
+									<ul class="account">	
+										<li>
+											<a href="#" id="usernameVal1" style="font-size: 18px;">
+											</a>
+											<a><span> <i class="fa fa-angle-down"></i></span></a>
+											<ul class="profile">
+												<li><a href="user_profile.html">User Profile</a></li>
+												<li><a href="upload_items.html">Upload Files</a></li>
+												<li><a href="manage_items.html">Manage Files</a></li>
+												<li><a href="item_notification.html">Notifications</a></li>
+												<li><a href="item_message.html">Messages</a></li>
+												<li><a href="change_password.html">Change Password</a></li>
+												<li><a href="#" onclick="logout()">Sign Out</a></li>
+											</ul>
+										</li>
+									</ul>
+									<ul class="notification_icons">
+										<li>
+											<a href="#" id="stunotify"><i class="fa fa-bell-o"></i><span class="number">1</span></a>
+										</li>
+										<li>
+											<a href="#"><i class="fa fa-envelope-o"></i><span class="number">0</span></a>
+										</li>
+										<li>
+											
+										</li> 
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			    <div class="header-bottom">
+			    	<div class="container">
+				    	<div class="row align-items-center d-flex">
+				    		<div class="col-lg-3">
+				    			<div id="logo">
+							        <a href="index.html"><!--<img class="" src="img/logo.png" alt="" title="" />--></a>
+							    </div>
+				    		</div>
+					   		<div class="col-lg-9">				
+						      <nav id="nav-menu-container">
+						        <ul class="nav-menu float-right">
+						          <li class="menu-has-children"><a href="index.html">Home</a> </li>
+						          <li class="menu-has-children"><a href="index.html#services">Services</a></li>
+						          <li class="menu-has-children"><a href="index.html#about">About</a></li> 
+						          <li class="menu-has-children"><a href="index.html#team">Team</a></li>         
+						          <li class="menu-has-children"><a href="index.html#contact">Contact</a></li>	
+						          <li class="menu-has-children"><a href="index.html">Sign In as</a>
+						          	<ul>
+						            	<li><a href="hodlogin.html">HOD</a></li>
+						            	<li><a href="guidelogin.html">Guide</a></li>
+						            	<li><a href="stulogin.html">Student</a></li>
+						            </ul>
+						          </li>		          				          
+						        </ul>
+
+						      </nav><!-- #nav-menu-container -->	
+					      </div>	    		
+				    	</div>
+				    </div>
+			    </div>
+			  </header><!-- #header -->
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Notifications				
+							</h1>	
+							<p class="text-white link-nav"><a href="index_student.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href=""> Notifications</a></p>
+						</div>											
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+			
+			<!-- Start post Area -->
+			<section class="post-area section-gap">
+				<div class="container">
+					<div class="row justify-content-center d-flex">
+						<div class="col-lg-3 sidebar">
+							<div class="single-slidebar-profile">
+								<figure>
+                                    <i class='fas fa-users' style='font-size:90px;color: black;'></i><br><br>
+                                    <figcaption>
+										<h2 id="usernameVal2"></h2>
+                                    </figcaption>
+                                </figure>
+							</div>
+							<div class="single-slidebar">
+								
+								<ul class="cat-list">
+									<li><a class="justify-content-between d-flex text_active" href="user_profile.html"><p><i class="fa fa-user-o pr-2"></i>  User Profile</p></a></li>
+									<li><a class="justify-content-between d-flex" href="upload_items.html"><p><i class="fa fa-file-word-o pr-2"></i>  Upload Items</p></a></li>
+									<li><a class="justify-content-between d-flex" href="manage_items.html"><p><i class="fa fa-heart-o pr-2"></i> Manage Items</p></a></li>
+									<li><a class="justify-content-between d-flex" href="item_notification.html"><p><i class="fa fa-briefcase pr-2"></i>  Notifications</p></a></li>
+									<li><a class="justify-content-between d-flex" href="item_message.html"><p><i class="fa fa-bell-o pr-2"></i>  Messages</p></a></li>
+									<li><a class="justify-content-between d-flex text-active" href="change_password.html"><p><i class="fa fa-lock pr-2"></i> Change Password</p></a></li>
+									<li><a class="justify-content-between d-flex" href="" onclick="logout()"><p><i class="fa fa-sign-out pr-2"></i> Logout</p></a></li>
+								</ul>
+							</div>							
+
+						</div>
+						<div class="col-lg-9 post-list">
+							<div class="profile_job_content col-lg-12">
+								<div class="headline">
+									<h3>Notifications</h3>
+								</div>
+							</div>
+							<div>
+								<table class="table table-striped" id="table-btn2" style="font-size: 20px;">
+									<tr><td>Welcome to the Project Management System</td></tr>
+									<tr id="noti1" style="display: none;"><td>Your project is approved.</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+			<script src="logout.js"></script>
+			<script src="usernameDisplay.js"></script>
+			<script src="item_notification.js"></script>
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>		
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
+
+
+

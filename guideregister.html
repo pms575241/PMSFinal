@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sign Up - Guide</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/Poppins-Regular.ttf">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<style>
+		.alert
+		{
+			text-align: center;
+			padding:10px;
+			background:#00cc67;
+			color:#fff;
+			margin-bottom:10px;
+			display:none;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 ">
+				<form class="login100-form validate-form" id="guideregisterForm">
+					<span class="login100-form-title p-b-55">Sign Up as guide</span>
+
+					<div class="alert">Successfully registered</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid name is required">
+						<input class="input100" type="text" name="fullname" id="fullname" placeholder="Full Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-user"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="email" name="email" id="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-envelope"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid number is required">
+						<input class="input100" type="text" name="mbno" id="mbno" placeholder="Mobile No">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-smartphone"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Valid department is requiredz">
+						 <select class="input100" name="department" id="department">
+				        	<option value="cse">Computer Science and Engineering</option>
+				        	<option value="it">Information Technology</option>
+				        	<option value="ce">Civil Engineering</option>
+				        	<option value="me">Mechanical Engineering</option>
+				        	<option value="ele">Electrical Engineering</option>
+				        	<option value="ene">Electronics Engineering</option>
+				        	<option value="cee">Civil Environmental Engineering</option>
+				        	<option value="csen">Civil Structural Engineering</option>
+				        	<option value="mde">Mechanical Design Engineering</option>
+				        	<option value="mhpe">Mechanical Heat Power Engineering</option>
+				        	<option value="mpe">Mechanical Production Engineering</option>
+				        	<option value="csys">Control System Engineering</option>
+				        	<option value="psys">Power System Engineering</option>
+				        	<option value="cseit">Computer Science and Information Technology</option>
+		       			</select>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-select"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+						<input class="input100" type="password" name="password" id="password" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-lock"></span>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Key is required">
+						<input class="input100" type="password" name="keypassword" id="keypassword" placeholder="Unique key">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<span class="lnr lnr-lock"></span>
+						</span>
+					</div>
+
+					<div class="contact100-form-checkbox m-l-4">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">Remember me</label>
+					</div>
+					
+					<div class="container-login100-form-btn p-t-25">
+						<button class="login100-form-btn" type="submit" onclick="signUpWithEmailPassword()">Sign Up</button>
+					</div>
+
+					<div class="text-center w-full pt-30">
+						<span class="txt1">Already a member?</span>
+
+						<a class="txt1 bo1 hov1" href="guidelogin.html">Sign in now</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+	<script src="guideregister.js"></script>
+	
+<!--===============================================================================================-->	
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/popper.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

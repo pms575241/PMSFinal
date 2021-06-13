@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <title>Demo storage</title>
+    <style>
+        th, td {
+          border: 3px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+        </style>
+</head>
+<body>
+
+    <progress value="0" max="100" id="uploader"></progress>
+    <form onSubmit={onSubmit}>
+    <input type="file" name="fileButton" id="fileButton" size="34" onChange={onFileChange} required>
+    </form>     
+    
+    <a id="myImg" onclick="myFunction()">1</a>
+    <button onclick="myFunction()">Display image</button>
+    <a onclick="subwork()">Display table</a>
+    <button onclick="notify()">Notify</button>
+    
+    <button onclick="displayUser()">Display Teams</button>
+    <table class="table table-striped" id="table-btn">
+        <tr  class="bg-info">
+            <th>Name</th>
+        </tr>
+        <tbody id="myTable">
+            <a href=""></a>
+        </tbody>
+    </table>
+    
+    <!--
+    <iframe src="https://calendar.google.com/calendar/embed?src=70ena4aqmh0hncql1fukjvb69g%40group.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="demo.js"></script>
+    <script src="mail.js"></script>
+    <script src= "https://smtpjs.com/v3/smtp.js"></script>
+    <script src="item_notification.js"></script>
+
+</body>
+</html>

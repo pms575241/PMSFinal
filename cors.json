@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["gs://pms575241-ba07b.appspot.com"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]

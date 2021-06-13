@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Author Meta -->
+    <meta name="author" content="">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Home</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet"> 
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="css/linearicons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/nice-select.css">					
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.min.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
+        <link rel="stylesheet" href="css/carousel_advance.css">
+        <link rel="stylesheet" href="css/hot_products.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body onload="teamValDisplay()">
+
+          <!-- #header Start-->
+          <header id="header">
+              <div class="header-top bg-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12 hide_column">
+                            <div class="header-top-menu">
+                                <h2 style="color: white;">Walchand College of Engineering, Sangli</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <div class="header-top-right text-right">
+                                <ul class="account">	
+                                    <li>
+                                        <a href="#" id="usernameVal1" style="font-size: 18px;">                                            
+                                        </a>
+                                        <a><span> <i class="fa fa-angle-down"></i></span></a>
+                                        <ul class="profile">
+                                            <li><a href="user_profile.html">User Profile</a></li>
+                                            <li><a href="upload_items.html">Upload Files</a></li>
+                                            <li><a href="manage_items.html">Manage Files</a></li>
+                                            <li><a href="item_notification.html">Notifications</a></li>
+                                            <li><a href="item_message.html">Messages</a></li>
+                                            <li><a href="change_password.html">Change Password</a></li>
+                                            <li><a href="#" onclick="logout()">Sign Out</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="notification_icons">
+                                    <li>
+                                        <a href="#"><i class="fa fa-bell-o"></i><span class="number">1</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-envelope-o"></i><span class="number">0</span></a>
+                                    </li>
+                                    <li>
+                                        <!--<a href="#"><i class="fa fa-shopping-basket"></i></a>-->
+                                    </li> 
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center d-flex">
+                        <div class="col-lg-3">
+                            <div id="logo">
+                                <a href="index.html"><!--<img class="" src="img/logo.png" alt="" title="" />--></a>
+                            </div>
+                        </div>
+                           <div class="col-lg-9">				
+                          <nav id="nav-menu-container">
+                            <ul class="nav-menu float-right">
+                              <li class="menu-has-children"><a href="index_student.html">Home</a> </li>
+                              <li class="menu-has-children"><a href="#services">Services</a></li>
+                              <li class="menu-has-children"><a href="#about">About</a></li> 
+                              <li class="menu-has-children"><a href="#team">Team</a></li>         
+                              <li class="menu-has-children"><a href="#contact">Contact</a></li>	
+                              <li class="menu-has-children"><a href="index_student.html">Sign In as</a>
+                                  <ul>
+                                    <li><a href="hodlogin.html">HOD</a></li>
+                                    <li><a href="guidelogin.html">Guide</a></li>
+                                    <li><a href="stulogin.html">Student</a></li>
+                                 </ul>
+                              </li>		          				          
+                            </ul>
+
+                          </nav><!-- #nav-menu-container -->	
+                      </div>	    		
+                    </div>
+                </div>
+            </div>
+          </header><!-- #header -->
+
+
+        <!-- start banner Area -->
+        <section class="banner-area relative" id="home">	
+            <div class="overlay overlay-bg"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="banner-content col-lg-10">
+                        <h1 class="text-white pt-100">
+                            Project<span> Management</span> System	<br> <h3 style="color:white">Create | Upload | Approve</h3>	
+                        </h1>	
+                    </div>											
+                </div>
+            </div>
+        </section>
+        <!-- End banner Area -->	
+        
+        <!-- Start feature-cat Area 
+        <section class="feature-cat-area section-full" id="category">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-40 col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Fields</h1>
+                            <hr class="lines">
+                        </div>
+                    </div>
+                </div>						
+                <div class="row">
+                </div>	
+            </div>	
+        </section>-->
+        <!-- End feature-cat Area -->
+
+
+        <!--*-*-*-*-*-*-*-*-*-*- BOOTSTRAP CAROUSEL  Featured Start*-*-*-*-*-*-*-*-*-*-->
+
+    <section class=" section-full bg-gray" id="services">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-40 col-lg-10">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Services</h1>
+                        <hr class="lines">
+                    </div>
+                </div>
+            </div>
+        
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="serviceBox">
+                           <div class="service-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <h3 class="title">Create Your Account</h3>
+                            <p class="description">
+                                Create account for facilities.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="serviceBox blue">
+                            <div class="service-icon">
+                                <i class="fa fa-cloud-upload"></i>
+                            </div>
+                            <h3 class="title">Upload your work</h3>
+                            <p class="description">
+                                 Upload your submissions related to project.
+                            </p>
+                          <!--  <a href="" class="read-more">Read More</a>-->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="serviceBox blue">
+                            <div class="service-icon">
+                                <i class="fa fa-mortar-board"></i>
+                            </div>
+                            <h3 class="title">Approve and Complete</h3>
+                            <p class="description">
+                                 Approve your work and complete your project.
+                            </p>
+                            <!--<a href="" class="read-more">Read More</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    
+
+        <!-- End service Area -->	
+
+
+    <!--*-*-*-*-*-*-*-*-*-*- END BOOTSTRAP CAROUSEL Featured Items *-*-*-*-*-*-*-*-*-*-->
+
+    <!-- Start product Area -->
+        <section style="background-color: white" class="product-area section-full" id="about">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-40 col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10" >About</h1>
+                            <hr class="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mb-30">
+                    <article >
+                        It is a secured intranet application which is useful for each and every institute. It should allow the student to login and upload/enter all his/her details regarding project such as project abstract, White papers, SRS, PPTs, Sources etc. before deadline given by guide. HOD or the head of the projects can directly search of any project. We can use this application for various departments and for various fields such as SY mini projects, TY mini projects, B.Tech. projects, M.Tech. projects and etc. User can view all the documents online. The main purpose for this is there is no automated system followed in any institute. In this Project Approval System, we will focus mainly on automating the process of project submission. In the sense project topics will be submitted online along with doc and approval will be provided online by the head of the department along with suggestions if any. This will reduce the physical efforts of students meeting the head of the department and also reduce the time frame period of completing this part of project work.  Students can also update their project status weekly and provide in for regarding the progress, which will be monitored by all relevant professors and head of departments.
+                    </article>
+                </div>	
+            </div>	
+        </section>
+        <!-- End products Area -->
+
+        <!-- Start callto-action Area -->
+        <section class="callto-action-area section-half" id="join">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-laptop"></i></span>
+                            <h3 class="promo-heading">Safe and Fast</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-clock-o"></i></span>
+                            <h3 class="promo-heading">Time saver</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-thumbs-o-up"></i></span>
+                            <h3 class="promo-heading">100% Satisfaction</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-promo">
+                            <span class="promo-icon"><i class="fa fa-users"></i></span>
+                            <h3 class="promo-heading">Beneficial</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </section>
+        <!-- End calto-action Area -->
+
+        <section class="team-area section-full" id="team">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-70 col-lg-8">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Amazing Team</h1>
+                        </div>
+                    </div>
+                </div>						
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-team">
+                            <div class="team_img">
+                                <img src="img/payal.jpg" alt="our-team">
+                                <ul class="social">
+                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:payalyadav1892@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Payal Yadav</h3>
+                                <span class="post"></span>
+                            </div>
+                        </div>
+                    </div>
+         
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-team">
+                            <div class="team_img">
+                                <img src="img/apurva.jpg" alt="our-team">
+                                <ul class="social">
+                                    
+                                    <li><a href="https://www.linkedin.com/in/apurva-patil-0106"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:patilapurva@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Apurva Patil</h3>
+                                <span class="post"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="our-team">
+                            <div class="team_img">
+                                <img src="img/amisha.jpg" alt="our-team">
+                                <ul class="social">
+                            
+                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="mailto:madanpawarm64@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="team-content">
+                                <h3 class="title">Amisha Pawar</h3>
+                                <span class="post"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </section><br><br><br>
+        <!-- End team Area -->
+
+        <section class="banner-area2 relative" id="contact">	
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-40 col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Contact Us</h1>
+                            <hr class="lines">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section >
+            <div class="container">
+                <div class="row">
+                    <iframe class="map-wrap" id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3818.609076148155!2d74.5992688!3d16.8457387!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1237f52c65db5%3A0xa3535676176ded0a!2sWalchand%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1608461614720!5m2!1sen!2sin" frameborder="0" style="border:0;width: 90%;height: 400px;" allowfullscreen="" aria-hidden="false" tabindex="0" ></iframe>
+                    <div class="col-lg-4 d-flex flex-column">
+                        <a class="contact-btns" href="about-us.html">About Company</a>
+                        <a class="contact-btns" href="signup.html">Create New Account</a>
+                    </div>
+                    <div class="col-lg-8">
+                        <form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+                            <div class="row">	
+                                <div class="col-lg-12 form-group">
+                                    <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+                                
+                                    <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+
+                                    
+                                    <textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                                    <button class="primary-btn mt-20 text-white" style="float: right;">Send Message</button>
+                                    <div class="mt-20 alert-msg" style="text-align: left;"></div>
+                                </div>
+                            </div>
+                        </form>	
+                    </div>
+                </div>
+            </div>	
+        </section>
+        <!-- End contact-page Area -->
+
+        <footer class="footer-area footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5  col-md-3 col-sm-6">
+                        <div class="single-footer-widget newsletter">
+                            <h2 style="color: white;;">Project Management System</h2>
+                        
+                            <ul class="footer-nav">
+                                <li>
+                                <strong></strong><span class="pl-2">Create | Upload | Approve</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2  col-md-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Links</h6>
+                            <ul class="footer-nav">
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-3 col-sm-6">
+                        <div class="single-footer-widget mail-chimp">
+                            <h6 class="mb-20">Contact Information</h6>	
+                            <ul class="footer-nav">
+                                <li>
+                                <strong>Address :</strong><span class="pl-2">Walchand College of Engineering, Sangli.</span>
+                                </li>
+                                <li>
+                                <strong>E-mail :</strong><span class="pl-2"><a href="#">projectmanagementsystem575241@gmail.com</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                                            
+                </div>
+
+                
+            </div>
+        </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <script src="stulogin.js"></script>	
+        <script src="logout.js"></script>
+        <script src="student.js"></script>
+        <script src="usernameDisplay.js"></script>
+            
+
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>			
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWfmIE82DsjVKLCId7vbbByhx85KZ1WGM"></script>
+          <script src="js/easing.min.js"></script>			
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/superfish.min.js"></script>	
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>	
+        <script src="js/owl.carousel.min.js"></script>			
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>			
+        <script src="js/parallax.min.js"></script>		
+        <script src="js/mail-script.js"></script>	
+        <script src="js/jquery.touchSwipe.min.js"></script>
+        <script src="js/responsive_bootstrap_carousel.js"></script>
+        <script src="js/paradise_slider_min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+
+
